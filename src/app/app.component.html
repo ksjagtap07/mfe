@@ -1,0 +1,284 @@
+<div #policyTabs class="dds__tabs" data-dds="tabs">
+  <div class="dds__tabs__list-container">
+    <ul
+      class="dds__tabs__list dds__tabs__list--overflow"
+      role="tablist"
+      aria-orientation="horizontal"
+    >
+      <li role="none">
+        <button
+          id="tab-basic-0"
+          class="dds__tabs__tab"
+          role="tab"
+          aria-controls="tab-basic-0-pane"
+          aria-selected="true"
+          tabindex="0"
+        >
+          <span class="dds__tabs__tab__label" title="General">General</span>
+        </button>
+      </li>
+      <li role="none">
+        <button
+          id="tab-basic-1"
+          class="dds__tabs__tab"
+          role="tab"
+          aria-controls="tab-basic-1-pane"
+          aria-selected="false"
+          tabindex="1"
+        >
+          <span class="dds__tabs__tab__label" title="Restart">Restart</span>
+        </button>
+      </li>
+      <li role="none">
+        <button
+          id="tab-basic-2"
+          class="dds__tabs__tab"
+          role="tab"
+          aria-controls="tab-basic-2-pane"
+          aria-selected="false"
+          tabindex="2"
+        >
+          <span class="dds__tabs__tab__label" title="Tab 3">Tab 3</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="dds__tabs__pane-container">
+    <!-- start of 1st tab detail -->
+    <div
+      id="tab-basic-0-pane"
+      class="dds__tabs__pane"
+      role="tabpanel"
+      tabindex="0"
+      aria-labelledby="tab-basic-0"
+      aria-hidden="false"
+    >
+      <div class="header">General</div>
+      <div
+        role="switch"
+        data-dds="switch"
+        tabindex="0"
+        class="dds__switch content"
+        #notification
+      >
+        <span class="dds__switch__label body-content">Notifications</span>
+        <div class="dds__switch__area" aria-hidden="true">
+          <span class="dds__switch__track"
+            ><span class="dds__switch__handle"></span
+          ></span>
+          <span class="dds__switch__control-label">
+            <span class="dds__switch__control-label__on">On</span>
+            <span class="dds__switch__control-label__off">Off</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-12 startTime content">
+        <div class="col-6 body-content">Start time</div>
+        <div class="col-6 dds__time-picker" #startTime data-dds="time-picker">
+          <div class="dds__time-picker__input-container">
+            <div class="dds__time-picker__input-wrapper">
+              <input
+                class="dds__time-picker__input"
+                type="text"
+                role="combobox"
+                autocomplete="off"
+                aria-expanded="false"
+                aria-autocomplete="list"
+                aria-labelledby="time-picker-861602508-label time-picker-861602508-helper-text"
+              />
+            </div>
+            <small
+              class="dds__input-text__helper"
+              id="time-picker-861602508-helper-text"
+              >Type a time or select one from the list</small
+            >
+            <div class="dds__time-picker__invalid-feedback">
+              Invalid time. Please, type a valid time or select one from the
+              list
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!-- end of 1st tab detail -->
+    <!-- start of 2nd tab detail -->
+    <div
+      id="tab-basic-1-pane"
+      class="dds__tabs__pane"
+      role="tabpanel"
+      tabindex="1"
+      aria-labelledby="tab-basic-1"
+      aria-hidden="true"
+    >
+      <div class="dds__dropdown" data-dds="dropdown" #dropdown>
+        <div class="dds__dropdown__input-container">
+          <label
+            id="dropdown-label-642298149"
+            for="dropdown-control-642298149"
+            class="dds__label header"
+            >Restart your laptop</label
+          >
+          <div
+            class="dds__dropdown__input-wrapper content"
+            autocomplete="off"
+            aria-haspopup="listbox"
+            aria-controls="dropdown-popup-642298149"
+          >
+            <input
+              id="dropdown-control-642298149"
+              name="dropdown-name"
+              type="text"
+              role="combobox"
+              class="dds__dropdown__input-field"
+              aria-labelledby="dropdown-label-642298149 dropdown-helper-642298149"
+              autocomplete="off"
+              aria-expanded="false"
+              aria-controls="dropdown-popup-list-642298149"
+            />
+            <!-- <small id="dropdown-helper-642298149" class="dds__input-text__helper">Helper text</small> -->
+          </div>
+        </div>
+        <div
+          id="dropdown-popup-642298149"
+          class="dds__dropdown__popup dds__dropdown__popup--hidden"
+          role="presentation"
+          tabindex="-1"
+        >
+          <ul
+            class="dds__dropdown__list"
+            role="listbox"
+            tabindex="-1"
+            id="dropdown-popup-list-642298149"
+          >
+            <li class="dds__dropdown__item" role="none">
+              <button
+                type="button"
+                class="dds__dropdown__item-option"
+                role="option"
+                data-selected="false"
+                data-value="1"
+                tabindex="-1"
+              >
+                <span class="dds__dropdown__item-label">Now</span>
+              </button>
+            </li>
+            <li class="dds__dropdown__item" role="none">
+              <button
+                type="button"
+                class="dds__dropdown__item-option"
+                role="option"
+                data-selected="false"
+                data-value="2"
+                tabindex="-1"
+              >
+                <span class="dds__dropdown__item-label">AFter 1 hour</span>
+              </button>
+            </li>
+            <li class="dds__dropdown__item" role="none">
+              <button
+                type="button"
+                class="dds__dropdown__item-option"
+                role="option"
+                data-selected="false"
+                data-value="3"
+                tabindex="-1"
+              >
+                <span class="dds__dropdown__item-label">Remind me later</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of 2nd tab detail -->
+    <!-- start of 3rd tab detail -->
+    <div
+      id="tab-basic-2-pane"
+      class="dds__tabs__pane"
+      role="tabpanel"
+      tabindex="2"
+      aria-labelledby="tab-basic-2"
+      aria-hidden="true"
+    >
+      <fieldset
+        class="dds__fieldset dds__checkbox-group"
+        aria-describedby="checkbox-error-549515355"
+        required="true"
+        aria-invalid="true"
+        aria-required="true"
+        role="group"
+      >
+        <legend class="header">Monitor Series</legend>
+        <div class="content">
+          <div id="checkbox-id-405237438" class="dds__checkbox">
+            <label
+              id="checkbox-label-405237438"
+              class="dds__checkbox__label"
+              for="checkbox-control-405237438"
+            >
+              <input
+                type="checkbox"
+                tabindex="0"
+                id="checkbox-control-405237438"
+                name="checkbox-control-name-405237438"
+                class="dds__checkbox__input"
+                value="1"
+                required="true"
+              />
+              <span>Dell UltraSharp</span>
+            </label>
+          </div>
+          <div id="checkbox-id-441738864" class="dds__checkbox">
+            <label
+              id="checkbox-label-441738864"
+              class="dds__checkbox__label"
+              for="checkbox-control-441738864"
+            >
+              <input
+                type="checkbox"
+                tabindex="0"
+                id="checkbox-control-441738864"
+                name="checkbox-control-name-441738864"
+                class="dds__checkbox__input"
+                value="2"
+                required="true"
+              />
+              <span>Alienware</span>
+            </label>
+          </div>
+          <div id="checkbox-id-847470807" class="dds__checkbox">
+            <label
+              id="checkbox-label-847470807"
+              class="dds__checkbox__label"
+              for="checkbox-control-847470807"
+            >
+              <input
+                type="checkbox"
+                tabindex="0"
+                id="checkbox-control-847470807"
+                name="checkbox-control-name-847470807"
+                class="dds__checkbox__input"
+                value="3"
+                required="true"
+              />
+              <span>Dell Gaming</span>
+            </label>
+          </div>
+          <div
+            id="checkbox-error-549515355"
+            class="dds__invalid-feedback dds__checkbox__error-text"
+            aria-live="polite"
+          >
+            <span
+              class="dds__icon dds__icon--alert-error dds__error-text__icon"
+              aria-hidden="true"
+            ></span>
+            Error text
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <!-- end of 3rd tab detail -->
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.startTime {
+  display: flex;
+  // align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content {
+  padding: 10px;
+  .body-content {
+    font-size: 14px;
+    // font-weight: 600;
+  }
+}
+.dds__tabs__pane {
+  margin: 10px;
+}
+.dds__tabs__pane-container {
+  width: 70%;
+}
